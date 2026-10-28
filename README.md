@@ -1,2 +1,3 @@
 # glamis-mgmt
-Glamis management site. Holds only the encrypted, pasword-protected build.
+
+Glamis Dunes Rentals management site. This repo holds only the encrypted, password-protected build that GitHub Pages serves at https://glamisdunes.github.io/glamis-mgmt/. The content is built from a private repo.

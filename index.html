@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Glamis Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="lock" class="lock">
+  <form id="lockform" class="lockcard" autocomplete="off">
+    <p class="eyebrow">Glamis Dunes Rentals</p>
+    <h1>Management</h1>
+    <p class="lockdesc">Playbook, settled decisions and reports. Managers only.</p>
+    <label for="pw" class="lbl">Password</label>
+    <input id="pw" type="password" autocomplete="current-password" required>
+    <label class="keep"><input id="keep" type="checkbox" checked> Keep me signed in on this device</label>
+    <button id="go" type="submit">Open</button>
+    <p id="lockmsg" class="lockmsg" role="status"></p>
+  </form>
+</div>
+<div id="app" class="app" hidden>
+  <header class="top">
+    <button id="menu" class="iconbtn" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <div class="brand"><span class="b1">Glamis</span> <span class="b2">Management</span></div>
+    <div id="crumb" class="crumb"></div>
+    <button id="lockbtn" class="iconbtn" type="button">Lock</button>
+  </header>
+  <nav id="nav" class="nav" aria-label="Pages"></nav>
+  <main class="main"><iframe id="frame" title="Page" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe></main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
